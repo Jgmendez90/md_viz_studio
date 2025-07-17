@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDVizStudio | Analytics & Social Media Management</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>MDVizStudio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/services.html">Services</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+<img src="assets/img/hero-banner.jpg" alt="MDVizStudio Banner" class="hero-image">
+<div class="cta"><a href="pages/consulting.html" class="cta-button">Request Free Consultation</a></div>
+        <h2>Unlock Insights. Empower Your Brand.</h2>
+        <p>Data analytics meets social media strategy to elevate your business.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services fade-in fade-in-delay-2">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Data Analytics</h3>
+            <p>Interactive dashboards and insights powered by Power BI, Tableau, and SQL.</p>
+        </div>
+        <div class="service">
+            <h3>Social Media Management</h3>
+            <p>End-to-end social strategy, content creation, and performance tracking.</p>
+        </div>
+        <div class="service">
+            <h3>Consulting</h3>
+            <p>We help startups and SMBs turn raw data into actionable strategies.</p>
+        </div>
+    </section>
+
+    
+<!-- Features Section -->
+<section class="features">
+    <h2>What We Do</h2>
+    <div class="feature-grid">
+        <div class="feature-card fade-in fade-in-delay-1" onclick="toggleDetail('analytics')">
+<img src="assets/img/analytics.jpg" alt="analytics" class="feature-img">
+            <h3>Data Analytics</h3>
+            <p>Unlock powerful business insights through clean and structured data.</p>
+            <div class="feature-detail" id="analytics">
+                <p>We specialize in SQL, Power BI, and Tableau to help you make data-driven decisions.</p>
+            </div>
+        </div>
+        <div class="feature-card fade-in fade-in-delay-2" onclick="toggleDetail('dashboards')">
+<img src="assets/img/dashboards.jpg" alt="dashboards" class="feature-img">
+            <h3>Custom Dashboards</h3>
+            <p>Fully tailored dashboards to match your KPIs and business goals.</p>
+            <div class="feature-detail" id="dashboards">
+                <p>From executive views to operational panels — we build them all.</p>
+            </div>
+        </div>
+        <div class="feature-card fade-in fade-in-delay-3" onclick="toggleDetail('social')">
+<img src="assets/img/social.jpg" alt="social" class="feature-img">
+            <h3>Social Media Management</h3>
+            <p>Maximize your digital presence with consistent and targeted messaging.</p>
+            <div class="feature-detail" id="social">
+                <p>We create content calendars, manage ads, and track engagement.</p>
+            </div>
+        </div>
+        <div class="feature-card fade-in fade-in-delay-4" onclick="toggleDetail('hr')">
+<img src="assets/img/hr.jpg" alt="hr" class="feature-img">
+            <h3>HR / Payroll Consulting</h3>
+            <p>Optimize your workforce operations with modern HR tools.</p>
+            <div class="feature-detail" id="hr">
+                <p>We help configure HRIS systems and improve payroll workflows.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+function toggleDetail(id) {
+    const element = document.getElementById(id);
+    element.style.display = element.style.display === 'block' ? 'none' : 'block';
+}
+</script>
+
+
+
+<!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MDVizStudio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
